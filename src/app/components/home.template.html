@@ -1,0 +1,10 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <h1>
+    Welcome home
+  </h1>
+  <div>
+    <bh-about *ngIf="page.selected === 0"></bh-about>
+    <bh-services *ngIf="page.selected === 1"></bh-services>
+    <bh-contact *ngIf="page.selected === 2"></bh-contact>
+  </div>
+</div>
